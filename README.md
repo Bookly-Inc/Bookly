@@ -67,7 +67,7 @@ External APIs:
 
 [gif goes here]
 
-### [ADDITIONAL FEATURES GO HERE - ADD ALL FEATURES HERE IN THE FORMAT ABOVE; you will check these off and add gifs as you complete them]
+## Additional features (considering)
 
 ### Social Features
 
