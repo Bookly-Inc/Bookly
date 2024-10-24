@@ -1,8 +1,8 @@
-# [your app name here]
+# Bookly 📚
 
 CodePath WEB103 Final Project
 
-Designed and developed by: [your names here]
+Designed and developed by: Nguyen Le, Albert C, Jason Tang
 
 🔗 Link to deployed app:
 
@@ -10,40 +10,103 @@ Designed and developed by: [your names here]
 
 ### Description and Purpose
 
-[text goes here]
+Bookly combines Tinder's engaging swipe mechanics with personalized music recommendations. Find your next favorite book and the perfect soundtrack to accompany your reading experience!
 
 ### Inspiration
 
-[text goes here]
+Struggle finding the perfect songs to vibe to while reading? We got you covered. While platforms like Goodreads help discover books and Spotify suggests music, there wasn't a solution that connected these two experiences in an engaging way.
 
 ## Tech Stack
 
 Frontend:
 
+- React
+- Next.js
+- TailwindCSS
+
 Backend:
+
+- NestJs
+- RESTful API
+- OAuth
+- PostgreSQL & Prisma ORM
+- Redis for caching
+
+External APIs:
+
+- Spotify API for music integration
+- OpenAI API for mood analysis
+- Google Books API for book data
 
 ## Features
 
-### [Name of Feature 1]
+### Swipe-Based Book Discovery
 
-[short description goes here]
-
-[gif goes here]
-
-### [Name of Feature 2]
-
-[short description goes here]
+- Tinder-like interface for book recommendations
+- Personalized suggestions based on preferences
+- Quick view of book details and ratings
+- Smooth animations and intuitive gestures
 
 [gif goes here]
 
-### [Name of Feature 3]
+### AI-Powered Music Matching
 
-[short description goes here]
+- Intelligent mood analysis of books
+- Automatic playlist generation
+- Spotify integration for instant listening
+- Customizable mood matching preferences
+
+[gif goes here]
+
+### Personal Collections
+
+- Create and manage book-music collections
+- Organize by mood, genre, or theme
+- Share collections with other users
+- Track reading progress with music history
 
 [gif goes here]
 
 ### [ADDITIONAL FEATURES GO HERE - ADD ALL FEATURES HERE IN THE FORMAT ABOVE; you will check these off and add gifs as you complete them]
 
+### Social Features
+
+- Share favorite book-music combinations
+- Connect with readers of similar taste
+- Discover popular combinations
+- Follow curators for recommendations
+
+### Smart Analytics
+
+- Track reading and listening patterns
+- View mood correlation insights
+- Get personalized recommendations
+- Monitor reading goals progress
+
 ## Installation Instructions
 
-[instructions go here]
+Prerequisites
+
+- Node.js >= 16
+- PostgreSQL >= 13
+- Redis >= 6
+- Spotify Developer Account
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/bookly.git
+cd bookly
+```
+
+2. Install dependencies
+
+```bash
+# Install frontend dependencies
+cd frontend
+npm install
+
+# Install backend dependencies
+cd ../backend
+npm install
+```
