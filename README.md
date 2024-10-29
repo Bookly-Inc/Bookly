@@ -23,10 +23,12 @@ Frontend:
 - React
 - Next.js
 - TailwindCSS
+- Ant Design
+- Shadcn/ui?
 
 Backend:
 
-- NestJs
+- NestJS
 - RESTful API
 - OAuth
 - PostgreSQL & Prisma ORM
@@ -63,7 +65,6 @@ External APIs:
 - Create and manage book-music collections
 - Organize by mood, genre, or theme
 - Share collections with other users
-- Track reading progress with music history
 
 [gif goes here]
 
@@ -89,7 +90,7 @@ Prerequisites
 
 - Node.js >= 16
 - PostgreSQL >= 13
-- Redis >= 6
+- Redix >= 6
 - Spotify Developer Account
 
 1. Clone the repository
