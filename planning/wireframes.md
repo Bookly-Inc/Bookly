@@ -5,17 +5,25 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 ## List of Pages
 
 [👉🏾👉🏾👉🏾 List the pages you expect to have in your app, with a ⭐ next to pages you have wireframed]
+- Main Page which contains core swiping functionality ⭐
+- Personal Profile page, contains collection of books saved ⭐
+- User Profile page, view user analytics and profile descriptions ⭐
+- Login Page ⭐
+- Signup Page
+- Social Page
+- Individual Book Pages
 
-## Wireframe 1: [page title]
+## Wireframe 1: Main Page (contains swiping feature)
 
-[👉🏾👉🏾👉🏾 include wireframe 1]
+![alt text](wireframe-image-1.png)
 
-## Wireframe 2: [page title]
+## Wireframe 2: Book Details Page
 
-[👉🏾👉🏾👉🏾 include wireframe 2]
+![book details page](wireframe-image-2.png)
 
-## Wireframe 3: [page title]
+## Wireframe 3: User Profile Page
 
-[👉🏾👉🏾👉🏾 include wireframe 3]
+![personal profile page](wireframe-image-3.png)
 
-[👉🏾👉🏾👉🏾 include more wireframes as desired]
+## Wireframe 4: Login Page
+![login page](wireframe-image-4.png)

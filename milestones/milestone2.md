@@ -6,11 +6,11 @@ This document should be completed and submitted during **Unit 6** of this course
 
 This unit, be sure to complete all tasks listed below. To complete a task, place an `x` between the brackets.
 
-- [ ] In `planning/wireframes.md`: add wireframes for at least three pages in your web app
-  - [ ] Bookly: swiping things
-  - [ ] Personal profile page: collections of all books
-  - [ ] Login/signup: page
-  - [ ] Color design: color palette (light, cozy, pastel?, library color-ish)
+- [x] In `planning/wireframes.md`: add wireframes for at least three pages in your web app
+  - [x] Bookly: swiping things
+  - [x] Personal profile page: collections of all books
+  - [x] Login/signup: page
+  - [x] Color design: color palette (light, cozy, pastel?, library color-ish)
 - [ ] In `planning/entity_relationship_diagram.md`: add the entity relationship diagram you developed for your database
   - [ ] Tables: books table, musics table, books-musics table, profile table, collections
   - [ ] ERD
