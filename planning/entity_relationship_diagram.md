@@ -115,10 +115,11 @@ Ref: CollectionItem.collection_id > Collection.collection_id
 Ref: CollectionItem.book_id > Book.book_id
 Ref: CollectionItem.song_id > Song.song_id
 ```
-[👉🏾👉🏾👉🏾 Include an image or images of the diagram below. You may also wish to use the following markdown syntax to outline each table, as per your preference.]
 
-| Column Name | Type | Description |
-|-------------|------|-------------|
-| id | integer | primary key |
-| name | text | name of the shoe model |
-| ... | ... | ... |
+![ERD](/Users/nguyen/Downloads/Visual Studio Code/Bookly/bookly_db.png)
+
+| Column Name | Type    | Description            |
+| ----------- | ------- | ---------------------- |
+| id          | integer | primary key            |
+| name        | text    | name of the shoe model |
+| ...         | ...     | ...                    |
