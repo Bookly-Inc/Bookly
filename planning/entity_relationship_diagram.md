@@ -9,13 +9,21 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 ## Add the Entity Relationship Diagram
 
 Table User {
+
   user_id integer [pk, increment]
+
   username varchar [not null]
+  
   email varchar [unique, not null]
+  
   password_hash varchar [not null]
+  
   oauth_provider varchar
+  
   preferred_genres varchar[]
+  
   created_at timestamp [default: `now()`]
+  
   updated_at timestamp [default: `now()`]
 }
 
