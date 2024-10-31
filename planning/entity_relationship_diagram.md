@@ -10,21 +10,21 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 
 Table User {
 
-  user_id integer [pk, increment]
+    user_id integer [pk, increment]
 
-  username varchar [not null]
+    username varchar [not null]
   
-  email varchar [unique, not null]
-  
-  password_hash varchar [not null]
-  
-  oauth_provider varchar
-  
-  preferred_genres varchar[]
-  
-  created_at timestamp [default: `now()`]
-  
-  updated_at timestamp [default: `now()`]
+    email varchar [unique, not null]
+    
+    password_hash varchar [not null]
+    
+    oauth_provider varchar
+    
+    preferred_genres varchar[]
+    
+    created_at timestamp [default: `now()`]
+    
+    updated_at timestamp [default: `now()`]
 }
 
 Table Book {
