@@ -8,23 +8,16 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 
 ## Add the Entity Relationship Diagram
 
+```dbml
 Table User {
-
-    user_id integer [pk, increment]
-
-    username varchar [not null]
-  
-    email varchar [unique, not null]
-    
-    password_hash varchar [not null]
-    
-    oauth_provider varchar
-    
-    preferred_genres varchar[]
-    
-    created_at timestamp [default: `now()`]
-    
-    updated_at timestamp [default: `now()`]
+  user_id integer [pk, increment]
+  username varchar [not null]
+  email varchar [unique, not null]
+  password_hash varchar [not null]
+  oauth_provider varchar
+  preferred_genres varchar[]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
 }
 
 Table Book {
@@ -121,7 +114,7 @@ Ref: Collection.user_id > User.user_id
 Ref: CollectionItem.collection_id > Collection.collection_id
 Ref: CollectionItem.book_id > Book.book_id
 Ref: CollectionItem.song_id > Song.song_id
-
+```
 [👉🏾👉🏾👉🏾 Include an image or images of the diagram below. You may also wish to use the following markdown syntax to outline each table, as per your preference.]
 
 | Column Name | Type | Description |
