@@ -114,4 +114,4 @@ Ref: CollectionItem.song_id > Song.song_id
 
 ## Add the Entity Relationship Diagram
 
-<img src='./bookly_db.png' title='Bookly ERD' width='' alt='ERD.png' />
+<img src='/bookly_db.png' title='Bookly ERD' width='' alt='ERD.png' />
