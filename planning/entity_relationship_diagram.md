@@ -4,10 +4,6 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 
 ## Create the List of Tables
 
-[👉🏾👉🏾👉🏾 List each table in your diagram]
-
-## Add the Entity Relationship Diagram
-
 ```dbml
 Table User {
   user_id integer [pk, increment]
@@ -116,10 +112,6 @@ Ref: CollectionItem.book_id > Book.book_id
 Ref: CollectionItem.song_id > Song.song_id
 ```
 
-![ERD](/Users/nguyen/Downloads/Visual Studio Code/Bookly/bookly_db.png)
+## Add the Entity Relationship Diagram
 
-| Column Name | Type    | Description            |
-| ----------- | ------- | ---------------------- |
-| id          | integer | primary key            |
-| name        | text    | name of the shoe model |
-| ...         | ...     | ...                    |
+<img src='./bookly_db.png' title='Bookly ERD' width='' alt='ERD.png' />
