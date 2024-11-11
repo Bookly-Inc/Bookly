@@ -106,6 +106,8 @@ cd bookly
 # Install frontend dependencies
 cd frontend
 npm install
+npm run dev
+# http://localhost:3000
 
 # Install backend dependencies
 cd ../backend
