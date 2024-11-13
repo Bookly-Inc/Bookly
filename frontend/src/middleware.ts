@@ -13,6 +13,7 @@ const intlMiddleware = createMiddleware({
 const isProtectedRoute = createRouteMatcher([
   '/dashboard(.*)',
   '/:locale/dashboard(.*)',
+  '/'
 ]);
 
 export default function middleware(
@@ -27,9 +28,11 @@ export default function middleware(
   ) {
     return clerkMiddleware((auth, req) => {
       if (isProtectedRoute(req)) {
+        // extract locale from URL path
         const locale
           = req.nextUrl.pathname.match(/(\/.*)\/dashboard/)?.at(1) ?? '';
 
+        // construct the sign-in URL with the locale
         const signInUrl = new URL(`${locale}/sign-in`, req.url);
 
         auth().protect({

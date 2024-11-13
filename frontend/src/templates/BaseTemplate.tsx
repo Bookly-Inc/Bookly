@@ -14,9 +14,6 @@ export const BaseTemplate = (props: {
       <div className="mx-auto max-w-screen-md">
         <header className="border-b border-gray-300">
           <div className="pb-8 pt-16">
-            <h1 className="text-3xl font-bold text-gray-900">
-              {AppConfig.name}
-            </h1>
           </div>
 
           <div className="flex justify-between">
