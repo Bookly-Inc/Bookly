@@ -10,9 +10,11 @@ const intlMiddleware = createMiddleware({
   defaultLocale: AppConfig.defaultLocale,
 });
 
+// routes that only an authenticated user can access
 const isProtectedRoute = createRouteMatcher([
   '/dashboard(.*)',
   '/:locale/dashboard(.*)',
+  '/'
 ]);
 
 export default function middleware(
@@ -27,11 +29,14 @@ export default function middleware(
   ) {
     return clerkMiddleware((auth, req) => {
       if (isProtectedRoute(req)) {
+        // extract locale from URL path
         const locale
           = req.nextUrl.pathname.match(/(\/.*)\/dashboard/)?.at(1) ?? '';
 
+        // construct the sign-in URL with the locale
         const signInUrl = new URL(`${locale}/sign-in`, req.url);
 
+        // redirect unauthenticated users to the sign-in page
         auth().protect({
           // `unauthenticatedUrl` is needed to avoid error: "Unable to find `next-intl` locale because the middleware didn't run on this request"
           unauthenticatedUrl: signInUrl.toString(),

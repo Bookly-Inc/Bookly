@@ -3,8 +3,9 @@ import '@/styles/global.css';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
+import { ClerkProvider } from '@clerk/nextjs';
 
-import { DemoBadge } from '@/components/DemoBadge';
+import { Header } from '@/components/Header';
 import { AppConfig } from '@/utils/AppConfig';
 
 export const metadata: Metadata = {
@@ -55,9 +56,10 @@ export default function RootLayout(props: {
           locale={props.params.locale}
           messages={messages}
         >
-          {props.children}
-
-          <DemoBadge />
+          <ClerkProvider>
+            <Header />
+            {props.children}
+          </ClerkProvider>
         </NextIntlClientProvider>
       </body>
     </html>

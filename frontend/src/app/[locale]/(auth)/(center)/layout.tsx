@@ -4,8 +4,9 @@ import { redirect } from 'next/navigation';
 export default function CenteredLayout(props: { children: React.ReactNode }) {
   const { userId } = auth();
 
+  // Redirect to home page if user has logged in
   if (userId) {
-    redirect('/dashboard');
+    redirect('/');
   }
 
   return (
