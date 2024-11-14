@@ -32,6 +32,7 @@
     "@electric-sql/pglite": "^0.2.12",
     "@hookform/resolvers": "^3.9.0",
     "@logtail/pino": "^0.5.2",
+    "@nextui-org/tooltip": "^2.0.41",
     "@sentry/nextjs": "^8.34.0",
     "@spotlightjs/spotlight": "^2.5.0",
     "@t3-oss/env-nextjs": "^0.11.1",
