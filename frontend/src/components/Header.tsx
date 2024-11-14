@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { AppConfig } from '@/utils/AppConfig';
 import { useUser, UserButton } from '@clerk/nextjs';
+import { UnauthUserIcon } from '@/components/UnauthUserIcon';
 
 export const Header = () => {
   
@@ -21,15 +22,13 @@ export const Header = () => {
       <div className='flex items-center'>
         { isSignedIn ? (
           <>
-            <Link href='/dashboard' classname='text-green-500 hover:text-green-700'>
+            <Link href='/dashboard' classname='text-green-500 hover:text-green-700 '>
               <UserButton showName={false}/>
             </Link>
-            <button onClick={() => { Clerk.signOut()}} className='ml-4 text-red-500 hover:text-red-700'>
-              Sign Out
-            </button>
+          
           </>
         ) : (
-          <Link href="/sign-in" className='text-green-500 hover:text-green-700'>Sign In</Link>
+          <UnauthUserIcon isSignedIn={isSignedIn}/>
         )}
       </div>
     </div>
