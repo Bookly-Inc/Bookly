@@ -10,7 +10,9 @@ This unit, be sure to complete all tasks listed below. To complete a task, place
 - [X] In `readme.md`, check off the features you have completed in this unit by adding a ✅ emoji in front of their title
   - [X] Under each feature you have completed, **include a GIF** showing feature functionality
 - [X] In this document, complete the **Reflection** section below
-
+- [X] Gif here:
+  - [x] https://imgur.com/a/qWVXbVn
+  - [x] <img src='./milestones/web103capstonemilestone4.gif.gif' title='Video Walkthrough' width='' alt='Gif' />
 ## Reflection
 
 ### 1. What went well during this unit?
