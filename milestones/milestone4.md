@@ -12,7 +12,8 @@ This unit, be sure to complete all tasks listed below. To complete a task, place
 - [X] In this document, complete the **Reflection** section below
 - [X] Gif here:
   - [x] https://imgur.com/a/qWVXbVn
-  - [x] <img src='./milestones/web103capstonemilestone4.gif.gif' title='Video Walkthrough' width='' alt='Gif' />
+<img src='./milestones/web103capstonemilestone4.gif.gif' title='Video Walkthrough' width='' alt='Gif' />
+
 ## Reflection
 
 ### 1. What went well during this unit?
