@@ -49,14 +49,14 @@ External APIs:
 
 ![Alt Text](./milestones/web103capstonemilestone4.gif)
 
-### Swipe-Based Book Discovery
+### Swipe-Based Book Discovery ✅
 
 - Tinder-like interface for book recommendations
 - Personalized suggestions based on preferences
 - Quick view of book details and ratings
 - Smooth animations and intuitive gestures
 
-[gif goes here]
+![Swipe-Based Book Discovery Feature](./milestones/web103milestone4gif-2.gif)
 
 ### AI-Powered Music Matching
 
@@ -64,8 +64,6 @@ External APIs:
 - Automatic playlist generation
 - Spotify integration for instant listening
 - Customizable mood matching preferences
-
-[gif goes here]
 
 ### Personal Collections
 
