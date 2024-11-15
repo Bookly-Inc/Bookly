@@ -42,6 +42,13 @@ External APIs:
 
 ## Features
 
+### User Sign-In and Sign-Up Pages ✅
+- Users can create a new account or sign up with username/password or OAuth
+- Redirects after successful logins and logouts
+- Restricted access for certain pages, accessible only when user is logged in 
+
+![Alt Text](./milestones/web103capstonemilestone4.gif)
+
 ### Swipe-Based Book Discovery
 
 - Tinder-like interface for book recommendations
