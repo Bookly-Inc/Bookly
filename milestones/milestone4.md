@@ -23,12 +23,12 @@ We faced a few challenges with scheduling and communication related to the imple
 
 ### Did you finish all of your tasks in your sprint plan for this week? If you did not finish all of the planned tasks, how would you prioritize the remaining tasks on your list?
 
-[👉🏾👉🏾👉🏾 your answer here]
+We finished the core feature but had trouble connecting all the parts together. The backend logic is more complicated than we estimated so right now we are trying for the MVP (minimum viable product) first.
 
 ### Which features and user stories would you consider “at risk”? How will you change your plan if those items remain “at risk”?
 
-[👉🏾👉🏾👉🏾 your answer here]
+I would say the mood scoring analysis as it is complex. If we are stuck by the weekends, we will reach out to CodePath for assistance
 
 ### 5. What additional support will you need in upcoming units as you continue to work on your final project?
 
-[👉🏾👉🏾👉🏾 your answer here]
+It is hard but I believe we can do it so I don't think we need any particular support.
