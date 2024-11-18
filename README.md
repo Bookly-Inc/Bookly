@@ -119,6 +119,7 @@ cd ../backend
 npm install
 docker compose up -d postgres
 npm run start:dev
+# http://localhost:3001
 ```
 
 ## License
