@@ -21,60 +21,62 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { AllConfigType } from './config/config.type';
 import { SessionModule } from './session/session.module';
 import { MailerModule } from './mailer/mailer.module';
+import { GoogleBooksModule } from './google-books/google-books.module';
 
 const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
-  useClass: TypeOrmConfigService,
-  dataSourceFactory: async (options: DataSourceOptions) => {
-    return new DataSource(options).initialize();
-  },
+	useClass: TypeOrmConfigService,
+	dataSourceFactory: async (options: DataSourceOptions) => {
+		return new DataSource(options).initialize();
+	},
 });
 
 @Module({
-  imports: [
-    ConfigModule.forRoot({
-      isGlobal: true,
-      load: [
-        databaseConfig,
-        authConfig,
-        appConfig,
-        mailConfig,
-        fileConfig,
-        googleConfig,
-      ],
-      envFilePath: ['.env'],
-    }),
-    infrastructureDatabaseModule,
-    I18nModule.forRootAsync({
-      useFactory: (configService: ConfigService<AllConfigType>) => ({
-        fallbackLanguage: configService.getOrThrow('app.fallbackLanguage', {
-          infer: true,
-        }),
-        loaderOptions: { path: path.join(__dirname, '/i18n/'), watch: true },
-      }),
-      resolvers: [
-        {
-          use: HeaderResolver,
-          useFactory: (configService: ConfigService<AllConfigType>) => {
-            return [
-              configService.get('app.headerLanguage', {
-                infer: true,
-              }),
-            ];
-          },
-          inject: [ConfigService],
-        },
-      ],
-      imports: [ConfigModule],
-      inject: [ConfigService],
-    }),
-    UsersModule,
-    FilesModule,
-    AuthModule,
-    AuthGoogleModule,
-    SessionModule,
-    MailModule,
-    MailerModule,
-    HomeModule,
-  ],
+	imports: [
+		ConfigModule.forRoot({
+			isGlobal: true,
+			load: [
+				databaseConfig,
+				authConfig,
+				appConfig,
+				mailConfig,
+				fileConfig,
+				googleConfig,
+			],
+			envFilePath: ['.env'],
+		}),
+		infrastructureDatabaseModule,
+		I18nModule.forRootAsync({
+			useFactory: (configService: ConfigService<AllConfigType>) => ({
+				fallbackLanguage: configService.getOrThrow('app.fallbackLanguage', {
+					infer: true,
+				}),
+				loaderOptions: { path: path.join(__dirname, '/i18n/'), watch: true },
+			}),
+			resolvers: [
+				{
+					use: HeaderResolver,
+					useFactory: (configService: ConfigService<AllConfigType>) => {
+						return [
+							configService.get('app.headerLanguage', {
+								infer: true,
+							}),
+						];
+					},
+					inject: [ConfigService],
+				},
+			],
+			imports: [ConfigModule],
+			inject: [ConfigService],
+		}),
+		UsersModule,
+		FilesModule,
+		AuthModule,
+		AuthGoogleModule,
+		SessionModule,
+		MailModule,
+		MailerModule,
+		GoogleBooksModule,
+		HomeModule,
+	],
 })
 export class AppModule {}

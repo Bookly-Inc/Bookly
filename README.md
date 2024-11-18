@@ -119,6 +119,8 @@ npm run dev
 # Install backend dependencies
 cd ../backend
 npm install
+docker compose up -d postgres
+npm run start:dev
 ```
 
 ## License
