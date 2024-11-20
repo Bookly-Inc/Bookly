@@ -122,6 +122,27 @@ npm run start:dev
 # http://localhost:3001
 ```
 
+## Workflow
+
+1. Frontend calls /books/swipe with Spotify access token
+
+2. Backend:
+
+2a. Gets a random book from Google Books API
+
+2b. Analyzes its mood using Gemini
+
+2c. Gets music recommendations from Spotify based on mood
+
+2d. Returns everything as a package
+
+
+3. User swipes on the book
+
+3a. Frontend calls /books/swipe POST endpoint with the action
+
+3b. Backend stores the swipe action
+
 ## License
 
 Copyright 2024 Nguyen Le

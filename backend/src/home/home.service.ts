@@ -4,12 +4,12 @@ import { AllConfigType } from '../config/config.type';
 
 @Injectable()
 export class HomeService {
-  constructor(private configService: ConfigService<AllConfigType>) {}
+	constructor(private configService: ConfigService<AllConfigType>) {}
 
-  appInfo() {
-    return {
-      name: this.configService.get('app.name', { infer: true }),
-      description: 'API for Bookly - Your Book Discovery Platform',
-    };
-  }
+	appInfo() {
+		return {
+			name: this.configService.get('app.name', { infer: true }),
+			description: 'API for Bookly - Your Book Discovery Platform',
+		};
+	}
 }

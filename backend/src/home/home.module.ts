@@ -4,8 +4,8 @@ import { HomeController } from './home.controller';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [ConfigModule],
-  controllers: [HomeController],
-  providers: [HomeService],
+	imports: [ConfigModule],
+	controllers: [HomeController],
+	providers: [HomeService],
 })
 export class HomeModule {}

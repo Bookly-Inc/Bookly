@@ -1,11 +1,11 @@
 NODE_ENV=development
-APP_PORT=3000
-APP_NAME="NestJS API"
+APP_PORT=3001
+APP_NAME="Bookly API"
 API_PREFIX=api
 APP_FALLBACK_LANGUAGE=en
 APP_HEADER_LANGUAGE=x-custom-lang
 FRONTEND_DOMAIN=http://localhost:3000
-BACKEND_DOMAIN=http://localhost:3000
+BACKEND_DOMAIN=http://localhost:3001
 
 DATABASE_TYPE=postgres
 DATABASE_HOST=postgres
@@ -61,3 +61,7 @@ TWITTER_CONSUMER_KEY=
 TWITTER_CONSUMER_SECRET=
 
 WORKER_HOST=redis://redis:6379/1
+GOOGLE_BOOKS_API_KEY=your_google_books_api_key
+SPOTIFY_CLIENT_ID=your_spotify_client_id
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+GEMINI_API_KEY=your_gemini_api_key
