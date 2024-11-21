@@ -107,11 +107,11 @@ export default function SwipeCard() {
           key={currentIndex}
           {...bind()}
           style={{
-            transform: springs[0].x.to(
-              (x) => `translate3d(${x}px, 0, 0) rotate(${springs[0].rot}deg)`,
+            transform: springs[0]?.x.to(
+              (x) => `translate3d(${x}px, 0, 0) rotate(${springs[0]?.rot}deg)`,
             ),
-            scale: springs[0].scale,
-            opacity: springs[0].opacity,
+            scale: springs[0]?.scale,
+            opacity: springs[0]?.opacity,
           }}
           className="absolute w-[800px] h-[500px] bg-[#ef4a75] rounded-xl shadow-lg cursor-pointer transition-all duration-200"
         >
@@ -148,7 +148,7 @@ export default function SwipeCard() {
 
                 <div className="mt-4">
                   <div className="flex flex-wrap gap-2 mt-2">
-                    {book?.volumeInfo?.categories.map((tag, index) => (
+                    {book?.volumeInfo?.categories.map((tag: string, index: number) => (
                       <span
                         key={index}
                         className="bg-blue-500 text-white text-xs font-semibold py-1 px-3 rounded-full"

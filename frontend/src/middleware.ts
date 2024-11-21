@@ -14,7 +14,8 @@ const intlMiddleware = createMiddleware({
 const isProtectedRoute = createRouteMatcher([
   '/dashboard(.*)',
   '/:locale/dashboard(.*)',
-  '/'
+  '/discovery(.*)',
+  '/:locale/discovery(.*)',
 ]);
 
 export default function middleware(
@@ -25,6 +26,7 @@ export default function middleware(
   if (
     request.nextUrl.pathname.includes('/sign-in')
     || request.nextUrl.pathname.includes('/sign-up')
+    || request.nextUrl.pathname.includes('/')
     || isProtectedRoute(request)
   ) {
     return clerkMiddleware((auth, req) => {

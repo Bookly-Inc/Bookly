@@ -50,8 +50,8 @@ export const UnauthUserIcon: React.FC<UnauthUserIconProps> = ({isSignedIn}) => {
         {
           showPopover && (
             <div ref={popoverRef} className='absolute text-base top-[72px] right-0 bg-white p-2 shadow-lg rounded-md'>
-              <p className='text-gray-700 mx-2'>Please log in to access your profile.</p>
-              
+              <p className='text-gray-700 m-2'>Please log in to access your profile.</p>
+              <Link href='/sign-in' className='bg-green-500 rounded-md p-[5px]'><button>Sign In</button></Link>
             </div>
           )
         }

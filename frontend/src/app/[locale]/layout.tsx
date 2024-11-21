@@ -56,7 +56,7 @@ export default function RootLayout(props: {
           locale={props.params.locale}
           messages={messages}
         >
-          <ClerkProvider>
+          <ClerkProvider afterSignOutUrl={'/sign-in'}>
             <Header />
             {props.children}
           </ClerkProvider>

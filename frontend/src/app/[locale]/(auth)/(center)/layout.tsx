@@ -6,7 +6,7 @@ export default function CenteredLayout(props: { children: React.ReactNode }) {
 
   // Redirect to home page if user has logged in
   if (userId) {
-    redirect('/');
+    redirect('/discovery');
   }
 
   return (
