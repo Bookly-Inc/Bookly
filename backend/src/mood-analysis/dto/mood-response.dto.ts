@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class BookMoodAttributesDto {
+export class MoodAttributesDto {
 	@ApiProperty({ example: 0.7 })
 	valence: number;
 
@@ -14,9 +14,9 @@ export class BookMoodAttributesDto {
 	danceability: number;
 }
 
-export class BookMoodAnalysisDto {
-	@ApiProperty({ type: BookMoodAttributesDto })
-	moodAttributes: BookMoodAttributesDto;
+export class MoodResponseDto {
+	@ApiProperty({ type: MoodAttributesDto })
+	moodAttributes: MoodAttributesDto;
 
 	@ApiProperty({ example: 'romantic' })
 	primaryMood: string;
@@ -26,10 +26,4 @@ export class BookMoodAnalysisDto {
 
 	@ApiProperty({ example: 'medium' })
 	tempo: string;
-
-	@ApiProperty({ example: 'major' })
-	keySignature: string;
-
-	@ApiProperty({ example: ['love', 'relationships'] })
-	themes: string[];
 }

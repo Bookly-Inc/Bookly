@@ -22,6 +22,9 @@ import { AllConfigType } from './config/config.type';
 import { SessionModule } from './session/session.module';
 import { MailerModule } from './mailer/mailer.module';
 import { GoogleBooksModule } from './google-books/google-books.module';
+import { SwipesModule } from './swipe/swipes.module';
+import { MoodModule } from './mood-analysis/mood.module';
+import { SpotifyModule } from './spotify/spotify.module';
 
 const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
 	useClass: TypeOrmConfigService,
@@ -77,6 +80,9 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
 		MailerModule,
 		GoogleBooksModule,
 		HomeModule,
+		SwipesModule,
+		MoodModule,
+		SpotifyModule,
 	],
 })
 export class AppModule {}

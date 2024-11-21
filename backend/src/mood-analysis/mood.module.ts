@@ -1,17 +1,17 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { CacheModule } from '@nestjs/cache-manager';
-import { SpotifyService } from './spotify.service';
+import { MoodService } from './mood.service';
 
 @Module({
 	imports: [
 		ConfigModule,
 		CacheModule.register({
-			ttl: 3600,
+			ttl: 86400, // 24 hours
 			max: 100,
 		}),
 	],
-	providers: [SpotifyService],
-	exports: [SpotifyService],
+	providers: [MoodService],
+	exports: [MoodService],
 })
-export class SpotifyModule {}
+export class MoodModule {}

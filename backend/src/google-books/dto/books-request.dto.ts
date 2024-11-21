@@ -2,11 +2,11 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsInt, Min, Max } from 'class-validator';
 import { Type } from 'class-transformer';
 
-export class SwipeBooksRequestDto {
+export class BooksRequestDto {
 	@ApiProperty({
 		description: 'Number of books to return',
-		minimum: 1,
-		maximum: 40,
+		minimum: 5,
+		maximum: 50,
 		default: 10,
 		required: false,
 	})

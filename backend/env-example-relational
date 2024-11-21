@@ -64,4 +64,5 @@ WORKER_HOST=redis://redis:6379/1
 GOOGLE_BOOKS_API_KEY=your_google_books_api_key
 SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+SPOTIFY_REDIRECT_URL=your_spotify_redirect_url
 GEMINI_API_KEY=your_gemini_api_key

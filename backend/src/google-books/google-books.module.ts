@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { CacheModule } from '@nestjs/cache-manager';
-import { GoogleBooksController } from './google-books.controller';
 import { GoogleBooksService } from './google-books.service';
 
 @Module({
@@ -10,8 +9,7 @@ import { GoogleBooksService } from './google-books.service';
 			max: 100,
 		}),
 	],
-	controllers: [GoogleBooksController],
 	providers: [GoogleBooksService],
-	exports: [GoogleBooksService], // Export if you need to use in other modules
+	exports: [GoogleBooksService],
 })
 export class GoogleBooksModule {}

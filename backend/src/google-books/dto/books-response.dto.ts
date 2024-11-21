@@ -1,17 +1,19 @@
+// src/books/dto/book-response.dto.ts
 import { ApiProperty } from '@nestjs/swagger';
 
-export class SwipeBooksResponseDto {
+export class BooksResponseDto {
 	@ApiProperty({ example: 'zyTCAlFPjgYC' })
 	id: string;
 
-	@ApiProperty({ example: 'The Midnight Library' })
+	@ApiProperty({ example: 'Jujutsu Kaisen' })
 	title: string;
 
-	@ApiProperty({ example: ['Matt Haig'] })
+	@ApiProperty({ example: ['Gege Akutami'] })
 	authors: string[];
 
 	@ApiProperty({
-		example: 'Between life and death there is a library...',
+		example:
+			'A manga series about a high school student who becomes a cursed spirit fighter.',
 	})
 	description: string;
 
